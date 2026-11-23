@@ -148,6 +148,63 @@ ul {
   color: var(--tinta-fraca);
 }
 
+/* Projetos: um bloco por projeto, separados por linha, como na experiência */
+.projetos li {
+  padding: 0 0 28px 0;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.projetos li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.projetos h3 {
+  margin: 0 0 8px 0;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: clamp(26px, 3.5vw, 34px);
+  line-height: 1.2;
+}
+
+.projetos p {
+  margin-bottom: 10px;
+}
+
+/* Tecnologias usadas, em letras pequenas na cor de destaque */
+.projetos .tecnologias {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--destaque);
+}
+
+/* Situação do projeto (em produção, código privado...) */
+.projetos .aviso {
+  margin: 0;
+  font-size: 15px;
+  color: var(--tinta-fraca);
+}
+
+.link-projeto {
+  color: var(--tinta);
+  text-decoration: none;
+  border-bottom: 1px solid var(--linha);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.link-projeto span {
+  color: var(--destaque);
+}
+
+.link-projeto:hover,
+.link-projeto:focus-visible {
+  color: var(--destaque);
+  border-color: var(--destaque);
+}
+
 /* Contato: links grandes */
 .contato a {
   display: inline-block;
